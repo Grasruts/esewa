@@ -4,6 +4,6 @@ require "esewa/payment/verification"
 
 module Esewa
   class << self
-    attr_accessor :merchant_code, :api_url, :verification_url
+    attr_accessor :merchant_code, :verification_url
   end
 end
