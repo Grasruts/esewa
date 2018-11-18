@@ -13,10 +13,12 @@ Run `bundle install`
 
 In your `development.rb` and `production.rb` add
 
-### [ NOTE: Please store your merchant code in environment variables. You can use dotenv gem for it ]
+###  NOTE: Please store your merchant code in environment variables. You can use dotenv gem for it 
 
+```
 Esewa.merchant_code = < Your esewa merchant/service code>
 Esewa.verification_url = "https://ir-user.esewa.com.np/epay/transrec"
+```
 
 To verfiy your payment, run 
 ```
