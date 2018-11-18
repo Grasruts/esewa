@@ -11,7 +11,7 @@ module Esewa
         validate_verification_url
       end
 
-      def verify(params = {})
+      def verify_esewa_payment(params = {})
         uri = URI.parse(Esewa.verification_url)
         uri.query = URI.encode_www_form(amt: params[:amt], scd: Esewa.merchant_code, pid: params[:pid], rid: params[:rid])
         https = Net::HTTP.new(uri.host, uri.port)
