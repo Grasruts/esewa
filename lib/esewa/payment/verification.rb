@@ -6,7 +6,7 @@ module Esewa
   module Payment
     module Verification
       
-      def self.extended
+      def self.extended(base)
         validate_merchant_code
         validate_verification_url
       end
